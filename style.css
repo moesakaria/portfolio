@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+body{
+   font-family: "Source Serif 4", serif;
+   margin: 0;
+   border-top: 2px solid black;
+}
+
+/* Website Links except the nav */
+
+a:link{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  color: red;
+}
+a:active{
+  color: violet;
+}
+
+h1, h2, h3{
+   font-family: "Inter", serif;
+   color: #13396C;
+   margin: auto;
+}
+
+header{
+  text-align: center;
+  background-color: #C3D7DD;
+}
+
+header h1{
+  font-family: "DM Serif Display", serif;
+  color: #13396C;
+  font-size: 4em;
+}
+
+/* Navigation */
+nav{
+  background-color: #13396C;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  padding: 5px;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0;
+}
+
+nav li{
+  display: inline;
+  padding: 5px;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav a:link{
+  color: white;
+}
+
+nav a:visited{
+  color: white;
+}
+
+nav a:hover{
+  color: red;
+}
+
+nav a:active{
+  color: violet;
+}
+
+/* Main */
+main{
+   max-width: 800px;
+   margin: 20px auto;
+   padding: 10px;
+}
+
+main a:link{
+  color: #13396C;
+}
+main a:visited{
+  color: black;
+}
+main a:hover{
+  color: red;
+}
+main a:active{
+  color: violet;
+}
+
+main h3{
+  font-family: "DM Serif Display", serif;
+}
+
+/* Footer */
+footer {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  text-align: center;
+  background-color: #13396C;
+  padding-top: 30px;
+}
+
+footer p{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 .75rem 0 0;
+}
+
+footer h3{
+  color: white;
+  font-family: "DM Serif Display", serif;
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+    font-size: 3em;
+}
+
+.gallery .preview{
+    width: 100%;
+    height: auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width: 100px;
+    height: 75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 2em;
+  }
+}
+
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
+
+/* This is the CSS for the hero image */
+.home-hero{
+   background-image: url(images/hero-image.jpg);
+   height: 300px;
+   background-size: cover;
+   background-position: top center;
+   border-bottom: 2px solid black;
+}
+
+.home-hero h1{
+  color: white;
+  font-family: "DM Serif Display;", serif;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding-top: 115px;
+  font-size: 3em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.home-photo{
+  max-width: 75%;
+  height: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  border: 12px solid #C3D7DD;
+  border-bottom: 40px solid #C3D7DD;
+  margin: 0 0 5px 30px;
+}
+
+.resume-body{
+  margin: 0;
+}
+
+.fa{
+  font-size: 5em;
+  color: #13396C;
+}
+
+footer .fa{
+  font-size: 1em;
+  color: white;
+}
+
+.copyright{
+  background: black;
+}
+
+.col-sm-2{
+  text-align: center;
+}
+
+.resume-page main{
+  width: 480px;
+  border: 2px solid black;
+}
+.umrah-page main{
+  max-width: 1200px;
+}
+
+.umrah-page .hero-image{
+  box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+  border: 12px solid white;
+}
+
+.fa{
+  font-size: 3em;
+  color: #13396C;
+}
+
+.umrah-page footer .fa{
+  font-size: 1em;
+  color: white;
+}
+
+.umrah-page footer{
+  background-image: none;
+  background-color: #13396C;
+  border-top: 2px solid black;
+}
+
+.umrah-page footer p{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 .75rem 0 0;
+}
+
+.umrah-page .copyright{
+  background: black;
+}
+
+.umrah-page h1{
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+}
+
+.umrah-page h3{
+  color: white;
+  font-family: "DM Serif Display", serif;
+}
+
+.umrah-page .col-sm-2{
+  text-align: center;
+}
+
+form{
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 5px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+label{
+    float: left;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea{
+    margin-bottom: 1em;
+    display: block;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #13396C;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-page .col-sm-5 p{
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  margin: 0 auto;
+}
+
+.contact-page .col-sm-5 .logo{
+  border: 2px solid black;
+}
+
